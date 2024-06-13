@@ -1,0 +1,429 @@
+<!doctype html>
+<html lang="en">
+
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>Pres House Update</title>
+    <style media="all" type="text/css">
+    /* -------------------------------------
+    GLOBAL RESETS
+------------------------------------- */
+    
+    body {
+      font-family: Helvetica, sans-serif;
+      -webkit-font-smoothing: antialiased;
+      font-size: 16px;
+      line-height: 1.3;
+      -ms-text-size-adjust: 100%;
+      -webkit-text-size-adjust: 100%;
+    }
+    
+    table {
+      border-collapse: separate;
+      mso-table-lspace: 0pt;
+      mso-table-rspace: 0pt;
+      width: 100%;
+    }
+    
+    table td {
+      font-family: Helvetica, sans-serif;
+      font-size: 16px;
+      vertical-align: top;
+    }
+    /* -------------------------------------
+    BODY & CONTAINER
+------------------------------------- */
+    
+    body {
+      background-color: #f4f5f6;
+      margin: 0;
+      padding: 0;
+    }
+    
+    .body {
+      background-color: #f4f5f6;
+      width: 100%;
+    }
+    
+    .container {
+      margin: 0 auto !important;
+      max-width: 600px;
+      padding: 0;
+      padding-top: 24px;
+      width: 600px;
+    }
+
+    .header-container {
+      position: relative;
+      text-align: center;
+      color: white;
+    }
+
+    .bottom-left {
+      position: absolute;
+      bottom: 8px;
+      left: 16px;
+    }
+    
+    .content {
+      box-sizing: border-box;
+      display: block;
+      margin: 0 auto;
+      max-width: 600px;
+      padding: 0;
+    }
+    /* -------------------------------------
+    HEADER, FOOTER, MAIN
+------------------------------------- */
+    
+    .main {
+      background: #ffffff;
+      border: 1px solid #eaebed;
+      border-radius: 16px;
+      width: 100%;
+    }
+    
+    .wrapper {
+      box-sizing: border-box;
+      padding: 24px;
+    }
+    
+    .footer {
+      clear: both;
+      padding-top: 24px;
+      text-align: center;
+      width: 100%;
+    }
+    
+    .footer td,
+    .footer p,
+    .footer span,
+    .footer a {
+      color: #9a9ea6;
+      font-size: 16px;
+      text-align: center;
+    }
+    /* -------------------------------------
+    TYPOGRAPHY
+------------------------------------- */
+    
+    p {
+      font-family: Helvetica, sans-serif;
+      font-size: 16px;
+      font-weight: normal;
+      margin: 0;
+      margin-bottom: 16px;
+    }
+    
+    a {
+      color: #0867ec;
+      text-decoration: underline;
+    }
+    /* -------------------------------------
+    BUTTONS
+------------------------------------- */
+    
+    .btn {
+      box-sizing: border-box;
+      min-width: 100% !important;
+      width: 100%;
+    }
+    
+    .btn > tbody > tr > td {
+      padding-bottom: 16px;
+    }
+    
+    .btn table {
+      width: auto;
+    }
+    
+    .btn table td {
+      background-color: #ffffff;
+      border-radius: 4px;
+      text-align: center;
+    }
+    
+    .btn a {
+      background-color: #ffffff;
+      border: solid 2px #0867ec;
+      border-radius: 4px;
+      box-sizing: border-box;
+      color: #0867ec;
+      cursor: pointer;
+      display: inline-block;
+      font-size: 16px;
+      font-weight: bold;
+      margin: 0;
+      padding: 12px 24px;
+      text-decoration: none;
+      text-transform: capitalize;
+    }
+    
+    .btn-primary table td {
+      background-color: #0867ec;
+    }
+    
+    .btn-primary a {
+      background-color: #0867ec;
+      border-color: #0867ec;
+      color: #ffffff;
+    }
+    
+    @media all {
+      .btn-primary table td:hover {
+        background-color: #ec0867 !important;
+      }
+      .btn-primary a:hover {
+        background-color: #ec0867 !important;
+        border-color: #ec0867 !important;
+      }
+    }
+    
+    /* -------------------------------------
+    OTHER STYLES THAT MIGHT BE USEFUL
+------------------------------------- */
+    
+    .last {
+      margin-bottom: 0;
+    }
+    
+    .first {
+      margin-top: 0;
+    }
+    
+    .align-center {
+      text-align: center;
+    }
+    
+    .align-right {
+      text-align: right;
+    }
+    
+    .align-left {
+      text-align: left;
+    }
+    
+    .text-link {
+      color: #0867ec !important;
+      text-decoration: underline !important;
+    }
+    
+    .clear {
+      clear: both;
+    }
+    
+    .mt0 {
+      margin-top: 0;
+    }
+    
+    .mb0 {
+      margin-bottom: 0;
+    }
+    
+    .preheader {
+      color: transparent;
+      display: none;
+      height: 0;
+      max-height: 0;
+      max-width: 0;
+      opacity: 0;
+      overflow: hidden;
+      mso-hide: all;
+      visibility: hidden;
+      width: 0;
+    }
+    
+    .powered-by a {
+      text-decoration: none;
+    }
+
+    .darken {
+      filter: brightness(0.5);
+    }
+    
+    /* -------------------------------------
+    RESPONSIVE AND MOBILE FRIENDLY STYLES
+------------------------------------- */
+    
+    @media only screen and (max-width: 640px) {
+      .main p,
+      .main td,
+      .main span {
+        font-size: 16px !important;
+      }
+      .wrapper {
+        padding: 8px !important;
+      }
+      .content {
+        padding: 0 !important;
+      }
+      .container {
+        padding: 0 !important;
+        padding-top: 8px !important;
+        width: 100% !important;
+      }
+      .main {
+        border-left-width: 0 !important;
+        border-radius: 0 !important;
+        border-right-width: 0 !important;
+      }
+      .btn table {
+        max-width: 100% !important;
+        width: 100% !important;
+      }
+      .btn a {
+        font-size: 16px !important;
+        max-width: 100% !important;
+        width: 100% !important;
+      }
+    }
+    /* -------------------------------------
+    PRESERVE THESE STYLES IN THE HEAD
+------------------------------------- */
+    
+    @media all {
+      .ExternalClass {
+        width: 100%;
+      }
+      .ExternalClass,
+      .ExternalClass p,
+      .ExternalClass span,
+      .ExternalClass font,
+      .ExternalClass td,
+      .ExternalClass div {
+        line-height: 100%;
+      }
+
+      #MessageViewBody a {
+        color: inherit;
+        text-decoration: none;
+        font-size: inherit;
+        font-family: inherit;
+        font-weight: inherit;
+        line-height: inherit;
+      }
+    }
+    </style>
+  </head>
+
+<body>
+    <table role="presentation" border="0" cellpadding="0" cellspacing="0" class="body">
+      <tr>
+        <td>&nbsp;</td>
+        <td class="container">
+          <div class="content">
+
+            <!-- START CENTERED WHITE CONTAINER -->
+            <table role="presentation" border="0" cellpadding="0" cellspacing="0" class="main">
+
+              <!-- START MAIN CONTENT AREA -->
+
+              <tr>
+                <td class="wrapper">
+
+
+<header>
+  <div class="header-container">
+    <img src="https://media.macphun.com/img/uploads/customer/blog/1692099583/169209980564db64dd211968.97552547.jpg" alt="fireflies" style="width:100%;" class="darken">
+    <h1><div class="bottom-left">Pres House: June Update</div></h1>
+  </div>
+</header>
+<h3>What is the most exciting thing that has happened to you in the past month?</h3>
+<p>My parents and sister came to visit (separately) and I've been going on nice long walks. </p>
+<p>— Celina</p>
+<p>I went to Japan!! I ate a ton of good food and saw a ton of cool cities, temples, museums, and gardens/parks.</p>
+<p>— Cathy</p>
+<p>My mom and sister visited me in Rochester! </p>
+<p>— Katie</p>
+<p>Traveled to Atlanta for the weekend!</p>
+<p>— Rena</p>
+<p>Not much tbh, went upstate!</p>
+<p>— Lucy</p>
+<hr><h3>What would be the weirdest but most useful thing to keep in your backpack?</h3>
+<img src='chart0.png' style='width:100%;' ><hr><h3>What book, movie, or TV show have you enjoyed the most recently?</h3>
+<p>Equal Rites</p>
+<p>— Celina</p>
+<p>Project Hail Mary by Andy Weir (guy who wrote The Martian) and Crying in H Mart by Michelle Zauner (very very sad but good)</p>
+<p>— Cathy</p>
+<p>Young Sheldon </p>
+<p>— Katie</p>
+<p>Baby Reindeer</p>
+<p>— Rena</p>
+<p>SELLING SUNSET !</p>
+<p>— Lucy</p>
+<hr><h3>What are you currently working on? (job/school/life)</h3>
+<p>The endless job application process :(</p>
+<p>— Celina</p>
+<p>Mentally preparing for Netflix! Feeling pretty nervous about the work culture but we will see.. Also I want to learn how to do ceramics on the wheel so I've been looking for classes in Cali, but they're soooo expensive :(</p>
+<p>— Cathy</p>
+<p>Clinical Lab Tech in the Clinical Microbiology Molecular Lab! Working on painting the house and making a bar space in our basement! Also working on training Wilson more, especially so he doesn’t run off in the backyard!!! </p>
+<p>— Katie</p>
+<p>Life: resting and doing nothing</p>
+<p>— Rena</p>
+<p>Job and life</p>
+<p>— Lucy</p>
+<hr><h3>What's your current go-to local comfort food order after a long day? Current favorite local restaurant?</h3>
+<p>I went to Canard with my parents it was quite pricey but with every penny. My go to meal recently has been a honey/soy/sambal salmon that I can make in the oven. </p>
+<p>— Celina</p>
+<p>Since I'm in Madison I'm obligated to answer QQs. But during the Japan trip we definitely ate at 7/11s, Lawsons, and FamilyMart the most. Their sandwiches and onigiris were really great especially for the price.</p>
+<p>— Cathy</p>
+<p>We honestly never go out to eat! Trying to save that $$! Although our guilty pleasure is getting a mini DQ blizzard (they way overfill them so they’re basically a medium). Nachos are our go-to lazy food to make. I have enjoyed eating at a restaurant called Our Paladar, though! It’s Cuban-American-ish? You </p>
+<p>— Katie</p>
+<p>Sushi Lover…</p>
+<p>— Rena</p>
+<p>Zong Zi!</p>
+<p>— Lucy</p>
+<hr><h3>If you could have any ridiculous talent, which would you choose? </h3>
+<img src='chart1.png' style='width:100%;' ><hr><h3>Celina</h3>
+<p><iframe src='https://drive.google.com/file/d/1OY7AL3odq-ECTdSj7vphlJ-qlwZ3d18L/preview' width='640' height='480' allow='autoplay'></iframe></p>
+<p>Campfire on Cannon Beach</p>
+<p><iframe src=' https://drive.google.com/file/d/1D5LKJWWwmDznCG_6dKXmCGPlSEG-DF2h/preview' width='640' height='480' allow='autoplay'></iframe></p>
+<p>sunset Tide pools on cannon beach</p>
+<p><iframe src=' https://drive.google.com/file/d/19qeADVnFsPZ4UqSsPejfGzCp9j9SzdyW/preview' width='640' height='480' allow='autoplay'></iframe></p>
+<p>espresso really likes his litter box</p>
+<p><iframe src=' https://drive.google.com/file/d/1JEPo7NZ3Bh91NkstheJIpIxpxGn_-G43/preview' width='640' height='480' allow='autoplay'></iframe></p>
+<p>a little hike with the fam</p>
+<p><iframe src=' https://drive.google.com/file/d/111uS6qtR-YlCLwdiQyy_lNJr-MXIkw9W/preview' width='640' height='480' allow='autoplay'></iframe></p>
+<p>crepes make life better</p>
+<hr><h3>Cathy</h3>
+<p><iframe src='https://drive.google.com/file/d/1wMkyNpeSRXb_XT64MakekOel3XyuCUq1/preview' width='640' height='480' allow='autoplay'></iframe></p>
+<p>sushi in Osaka</p>
+<p><iframe src=' https://drive.google.com/file/d/17wJSmjIJXddZsk4TJT0mRixhJaQQvQPf/preview' width='640' height='480' allow='autoplay'></iframe></p>
+<p>Glico Running Man</p>
+<p><iframe src=' https://drive.google.com/file/d/1iB8WKlzolvRTkzqiueag3vOpPmsElaXi/preview' width='640' height='480' allow='autoplay'></iframe></p>
+<p>deer on Itsukushima Island</p>
+<hr><h3>Katie</h3>
+<p><iframe src='https://drive.google.com/file/d/1lvXzlhuwjHXCINeJ74j5kOcHn9GAmqwK/preview' width='640' height='480' allow='autoplay'></iframe></p>
+<p>Steph’s uterus art</p>
+<p><iframe src=' https://drive.google.com/file/d/1G5Kl0IRbazDPupQVBjapJKu0bt4fadQE/preview' width='640' height='480' allow='autoplay'></iframe></p>
+<p>The goodest boy </p>
+<hr><h3>Rena</h3>
+<p><iframe src='https://drive.google.com/file/d/1f2Ds_7xQ9vhyxqRN8o0boXxubtQIW1l_/preview' width='640' height='480' allow='autoplay'></iframe></p>
+<p>Selfie with my old Tesla intern roommates in Atlanta, Georgia!</p>
+<hr>
+                </td>
+              </tr>
+
+
+              <!-- END MAIN CONTENT AREA -->
+              </table>
+
+            <!-- START FOOTER -->
+            <div class="footer">
+              <table role="presentation" border="0" cellpadding="0" cellspacing="0">
+                
+              </table>
+            </div>
+
+            <!-- END FOOTER -->
+            
+<!-- END CENTERED WHITE CONTAINER --></div>
+        </td>
+        <td>&nbsp;</td>
+      </tr>
+    </table>
+  </body>
+
+
+</html>
